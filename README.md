@@ -1,5 +1,8 @@
 # spk-guru
 sistem pendukung keputusan studi kasus penilaian guru metode weight product
+penambahan fitur :
+1. ganti, tambah, hapus, ubah soal q1-q4
+2. pencarian periode berdasarkan tahun input nilai
 
 original source code : https://github.com/rawatech/spk_dosen
 
