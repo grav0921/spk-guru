@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <!--<?php
+    <?php
       if($_POST['guru']=="0"){
         echo "<script>alert('guru belum dipilih');document.location='index.php' </script> ";
       }else{
@@ -66,7 +66,7 @@
     $sql = mysql_query("select * from guru_peserta where id_guru = '$guru'");
     $row = mysql_fetch_array($sql);
 
-  ?>-->
+  ?>
 
     <div class="container pt">
     <div class="row mt">
