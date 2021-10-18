@@ -99,11 +99,14 @@
                     $query = mysql_query($sql);
                     while($row = mysql_fetch_array($query)){
                       $cek = mysql_query("select * from nilai_siswa where nis='$nis' and id_guru='$row[id_guru]'");
+                      //$rows = mysql_fetch_array($cek);
                       $num = mysql_num_rows($cek);
-                      if ($num > 0 ){
-                        echo "<option value = '$row[id_guru]'>$row[nama] (valued)</option>";
-                      }else{
+                      // if ($num > 0 ){
+                      //   echo "<option value = '$row[id_guru]'>$row[nama] (valued)</option>";
+                      if ($row['c1'] == 0 || $row['c2'] == 0 || $row['c3'] == 0 || $row['c4'] == 0){
                         echo "<option value = '$row[id_guru]'>$row[nama]</option>";
+                      }else{
+                        echo "<option value = '$row[id_guru]'>$row[nama] (valued)</option>";
                       }
                     }
                     
